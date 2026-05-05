@@ -121,9 +121,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
           child: Text(
             title,
             style: Theme.of(context).textTheme.titleMedium?.copyWith(
-              fontWeight: FontWeight.bold,
-              color: Theme.of(context).colorScheme.primary,
-            ),
+                  fontWeight: FontWeight.bold,
+                  color: Theme.of(context).colorScheme.primary,
+                ),
           ),
         ),
         Card(
@@ -195,7 +195,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
           Text(subtitle),
           const SizedBox(height: 8),
           DropdownButtonFormField<String>(
-            value: value,
+            initialValue: value,
             decoration: const InputDecoration(
               isDense: true,
               contentPadding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
@@ -244,8 +244,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
       trailing: Text(
         value,
         style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-          color: Theme.of(context).colorScheme.onSurfaceVariant,
-        ),
+              color: Theme.of(context).colorScheme.onSurfaceVariant,
+            ),
       ),
     );
   }
